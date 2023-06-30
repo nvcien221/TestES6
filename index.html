@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quản Lý</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-6 mx-auto">
-                <h3 class="display-4 text-center">Quản lý học viện <br/>nghiên cứu &
+                <h3 class="display-4 text-center">Quản lý học viên <br/>nghiên cứu &
                     giảng dạy</h3>
-                <form id="formQLSV">
+                <form id="formQuanLy">
                     <div class="row">
                         <div class="col-6 form-group">
                             <label for="">Họ và tên </label>
@@ -111,16 +112,20 @@
                     <div class="form-group text-center">
                         <button type="button" onclick="" id="btnAdd" class="btn btn-success">Thêm Người Dùng</button>
 
-                        <button type="button" onclick="" class="btn btn-dark">Reset</button>
-                        <button type="button" onclick="" class="btn btn-info">Cập Nhật</button>
+                        
+                        <button type="button" onclick="" id="btnUpdate" class="btn btn-info">Cập Nhật</button>
                     </div>
                 </form>
                 <div class="row">
                     <div class="col-9 form-group">                    
-                        <input placeholder="Nhập tên người dùng" type="text" class="form-control" id="txtSearch">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" id="renderS" class="btn btn-secondary">Student</button>
+                            <button type="button" id="renderE" class="btn btn-secondary">Employee</button>
+                            <button type="button" id="renderC" class="btn btn-secondary">Customer</button>
+                          </div>
                     </div>
                     <div class="col-3 form-group">
-                       <button id="btnSearch" class="btn btn-primary">Search</button>
+                        <button type="button" id="btnReset" class="btn btn-dark">Reset</button>
                     </div>
                 </div>
             </div>
@@ -147,13 +152,24 @@
 
         </div>
     </div>
-    <script>
-        import main from "./js/main.js" 
-    </script>
+
+    <footer>
+        <img src="./assets/image/line_footer.png" alt="">
+    </footer>
+
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./js/until.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

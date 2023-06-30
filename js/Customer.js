@@ -5,6 +5,7 @@ export class Customer extends Person{
         this.tenCongTy = tenCongTy;
         this.hoaDon = hoaDon;
         this.danhGia = danhGia;
+        this.type = "Customer";
     }
     getDetails(){
         this.result = `

@@ -4,6 +4,7 @@ export class Employee extends Person{
         super(...restPerson);
         this.soNgayLam = soNgayLam;
         this.luong = luong;
+        this.type = "Employee";
     }
     totalSalary(){
         this.total = this.soNgayLam * this.luong;

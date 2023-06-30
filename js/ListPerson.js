@@ -20,5 +20,14 @@ export function ListPerson(){
         if(index > -1){
             this.mangDS.splice(index,1);
         }
-    }
+    };
+    this.capNhat = function(p){
+        var indexFind = this.timIndex(p.id);
+        if(indexFind > -1){
+            ds.mangDS[indexFind] = p;
+            return true;
+        }else{
+            return false;
+        }
+    };
 }

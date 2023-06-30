@@ -1,0 +1,26 @@
+
+h3{
+    color: #e68e47;
+    font: normal 36px 'Open Sans', cursive;
+}
+
+.backToTop{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: #f55f8d;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transition: all .2s;
+    border-radius: 8px;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    opacity: 0;
+}
+.cd-top--is-visible {
+    opacity: 1;
+}
+

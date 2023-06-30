@@ -5,6 +5,7 @@ export class Student extends Person{
         this.toan = toan;
         this.ly = ly;
         this.hoa = hoa;
+        this.type = "Student";
     }
     diemTB() {
         this.dtb = ((Number(this.toan) + Number(this.ly) + Number(this.hoa) ) / 3).toFixed(2);
